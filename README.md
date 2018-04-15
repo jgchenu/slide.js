@@ -4,7 +4,7 @@
 html代码
 
 
-
+<block>
     <div id="slide" style="width:300px;height:100px;border:1px solid #ccc">
        <div>
             <img src="http://chenjianguang.com/static/callName/images/1.png" alt="" class="slide-item">
@@ -14,7 +14,7 @@ html代码
             <img src="http://chenjianguang.com/static/callName/images/5.png" alt="" class="slide-item"> 
         </div>
     </div>
-    
+ <block>
 
 
     必须需要设置：包裹元素的id，以及高度跟宽度
