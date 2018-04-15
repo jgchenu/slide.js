@@ -20,7 +20,7 @@ html代码
  js代码：
  
   需要先引入插件  
-    <script src="./slide.js"></script>
+    <script src="./slide.js"></script> <br/>
     <script>
         let slide = new Slide('slide', 3000,1);
     </script> <br/>
