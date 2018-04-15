@@ -20,6 +20,7 @@ html代码
  js代码：
   需要先引入插件
   <script src='./swiper.js'><script>
+  <br/>
   <script>
    var slide=new Slide('slide','3000','1');
    //第一个参数是设置了轮播的包裹元素的id，是必须参数
