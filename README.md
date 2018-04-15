@@ -2,9 +2,8 @@
 原生js写的swiper插件，支持轮播速度，轮播内容，轮播间隔自定义，以及导航圆点点击跳转,后续再增加手势滑动。
 
 html代码
-    <div id="slide" style="width:300px;height:100px;border:1px solid #ccc">//这个是包裹元素
-       <div>//这个包裹元素下面的div
-             //这些是随意的元素，只要带有class为slide-item的元素即可。
+    <div id="slide" style="width:300px;height:100px;border:1px solid #ccc">
+       <div>
             <img src="http://chenjianguang.com/static/callName/images/1.png" alt="" class="slide-item">
             <img src="http://chenjianguang.com/static/callName/images/2.png" alt="" class="slide-item">
             <img src="http://chenjianguang.com/static/callName/images/3.png" alt="" class="slide-item">
