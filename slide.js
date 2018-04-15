@@ -34,7 +34,6 @@
         let styleEle = document.createElement('style'); //创建style标签
         let navLeft = this.slideWidth / 2 - this.imgs.length*9;
         let navTop = this.slideHeight / 40;
-        console.log(navLeft, document.querySelector('#nav').clientWidth);
         styleEle.innerHTML += '.slide{position:relative;overflow:hidden;font-size:0}'; //舒适化slide视窗的样式
         styleEle.innerHTML += '.slide .room{position:absolute}'; //初始化room内容层的样式
         styleEle.innerHTML += '.slide .slide-item{display:inline-block}'; //初始化room下class为slide-item 的元素
@@ -95,7 +94,6 @@
         target
     }) {
         clearInterval(this.timer);
-        console.log(target);
         this.timer = setInterval(() => {
             let left = parseInt(this.room.style.left);
             if (target.index > this.imgIndex) {

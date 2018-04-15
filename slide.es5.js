@@ -104,7 +104,6 @@
         var target = _ref.target;
 
         clearInterval(this.timer);
-        console.log(target);
         this.timer = setInterval(function () {
             var left = parseInt(_this3.room.style.left);
             if (target.index > _this3.imgIndex) {
