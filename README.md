@@ -3,14 +3,14 @@
 
 html代码
 
-     <div id="slide" style="width:300px;height:100px;border:1px solid #ccc">
-       <div>
-            <img src="http://chenjianguang.com/static/callName/images/1.png" alt="" class="slide-item">
-            <img src="http://chenjianguang.com/static/callName/images/2.png" alt="" class="slide-item">
-            <img src="http://chenjianguang.com/static/callName/images/3.png" alt="" class="slide-item">
-            <img src="http://chenjianguang.com/static/callName/images/4.png" alt="" class="slide-item">
-            <img src="http://chenjianguang.com/static/callName/images/5.png" alt="" class="slide-item"> 
-     </div>
+* >      <div id="slide" style="width:300px;height:100px;border:1px solid #ccc">
+* >        <div>
+* >             <img src="http://chenjianguang.com/static/callName/images/1.png" alt="" class="slide-item">
+* >            <img src="http://chenjianguang.com/static/callName/images/2.png" alt="" class="slide-item">
+* >             <img src="http://chenjianguang.com/static/callName/images/3.png" alt="" class="slide-item">
+* >            <img src="http://chenjianguang.com/static/callName/images/4.png" alt="" class="slide-item">
+* >             <img src="http://chenjianguang.com/static/callName/images/5.png" alt="" class="slide-item"> 
+* >      </div>
 
 
 
