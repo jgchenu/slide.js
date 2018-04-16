@@ -1,4 +1,4 @@
-;
+
 (function () {
     let Slide = function (
         slideId = 'slide',
@@ -7,21 +7,22 @@
     ) {
         this.slide = document.querySelector('#slide'); //获取视窗层
         this.room = this.slide.querySelector('div'); //获取内容层
-        this.imgs = this.slide.querySelectorAll('.slide-item'); //轮播图元素组
+        this.imgs = [...this.slide.querySelectorAll('.slide-item')]; //轮播图元素组
         this.slideWidth = parseInt(getComputedStyle(this.slide).width); //视窗层高度
         this.slideHeight = parseInt(getComputedStyle(this.slide).height); //视窗层宽度
-        this.imgs.forEach((el) => {
-            el.style.height = `${this.slideHeight}px`;
-            el.style.width = `${this.slideWidth}px`;
-        }); //使图片的宽度跟视窗层一样
+
         this.navButtons = null; //获取到所有的导航圆点
         this.timer = null; //定时器
         this.imgIndex = 1; //当前轮播图片index
         this.prev = null; //上一个
         this.next = null; //下一个
         this.speed = -(this.slideWidth / 10 * speed); //动画速度
-        this.resetAll(); //初始化设置
         this.resetCss();//初始化css样式
+        this.resetAll(); //初始化设置
+        this.imgs.forEach((el) => {
+            el.style.height = `${this.slideHeight}px`;
+            el.style.width = `${this.slideWidth}px`;
+        }); //使图片的宽度跟视窗层一样
         this.autoStart = setInterval(() => {
             this.nextItem()
         }, timeOut);
@@ -34,9 +35,9 @@
         let styleEle = document.createElement('style'); //创建style标签
         let navLeft = this.slideWidth / 2 - this.imgs.length*9;
         let navTop = this.slideHeight / 40;
-        styleEle.innerHTML += '.slide{position:relative;overflow:hidden;font-size:0}'; //舒适化slide视窗的样式
-        styleEle.innerHTML += '.slide .room{position:absolute}'; //初始化room内容层的样式
-        styleEle.innerHTML += '.slide .slide-item{display:inline-block}'; //初始化room下class为slide-item 的元素
+        styleEle.innerHTML += '.slide{position:relative;overflow:hidden;font-size:0;}'; //舒适化slide视窗的样式
+        styleEle.innerHTML += '.slide .room{position:absolute;}'; //初始化room内容层的样式
+        styleEle.innerHTML += '.slide .slide-item{display:inline-block;}'; //设置slide-item的样式为内联块级元素
         styleEle.innerHTML += `.slide .nav{padding:0 4px;list-style:none;position:absolute;font-size:0px;background:rgba(222,222,222,0.4);bottom:${navTop}px;left:${navLeft}px;text-align:center;-moz-border-radius:10px;border-radius:10px;}`;
         styleEle.innerHTML += '.navButton{display:inline-block;margin:6px 4px;background:#fff;width:8px;height:8px;-moz-border-radius:8px;border-radius:8px;cursor:pointer;}';
         document.head.appendChild(styleEle); //插入标签
