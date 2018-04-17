@@ -23,7 +23,7 @@ html代码
   需要先引入插件  
     <script src="./slid-es5.js"></script> <br/>
     <script>
-        let slide = new Slide('slide',3000,1,20);
+         slide = new Slide('slide',3000,1,20);
     </script> <br/>
    //第一个参数是设置了轮播的包裹元素的id，是必须参数  <br/>
    //第二个参数是轮播间隔，非必须参数，默认为3000ms  <br/>
