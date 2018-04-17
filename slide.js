@@ -46,8 +46,8 @@
         styleEle.innerHTML += '.slide{position:relative;overflow:hidden;font-size:0;}'; //舒适化slide视窗的样式
         styleEle.innerHTML += '.slide .room{position:absolute;}'; //初始化room内容层的样式
         styleEle.innerHTML += '.slide .slide-item{display:inline-block;}'; //设置slide-item的样式为内联块级元素
-        styleEle.innerHTML += `.slide .nav{padding:0 4px;list-style:none;position:absolute;font-size:0px;background:rgba(222,222,222,0.4);bottom:${navTop}px;left:${navLeft}px;text-align:center;-moz-border-radius:10px;border-radius:10px;}`;
-        styleEle.innerHTML += '.navButton{display:inline-block;margin:6px 4px;background:#fff;width:8px;height:8px;-moz-border-radius:8px;border-radius:8px;cursor:pointer;}';
+        styleEle.innerHTML += `.slide .nav{padding:0 4px;list-style:none;position:absolute;font-size:0px;bottom:${navTop}px;left:${navLeft}px;text-align:center;}`;
+        styleEle.innerHTML += '.navButton{display:inline-block;margin:6px 4px;background:#fff;width:8px;height:8px;-moz-border-radius:8px;border-radius:8px;cursor:pointer;box-shadow:0 0 6px #bbb;}';
         document.head.appendChild(styleEle); //插入标签
     }
 
