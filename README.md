@@ -1,7 +1,7 @@
 # swiper.js
 原生js写的swiper插件，支持轮播速度，轮播内容，轮播间隔自定义，以及导航圆点点击跳转,后续再增加手势滑动。
 
-### 使用说明：slide.js文件为es6编写的文件，在移动端有兼容性问题，仅供于源码参考。移动端跟pc端开发引用js文件直接下载slide-es5.js进行引入使用。
+### 使用说明：slide.js文件包含小部分es6语法编写的文件，在移动端有兼容性问题，仅供于源码参考。移动端跟pc端开发引用js文件直接下载slide-es5.js进行引入使用。
 html代码
 
     <div id="slide" style="height:200px;width:300px;height:100px;border:1px solid #ccc">
