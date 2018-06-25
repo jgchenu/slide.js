@@ -1,6 +1,8 @@
 # slide.js
 原生js写的轮播兼容 pc+移动端 插件，支持轮播速度，轮播内容，轮播间隔，手势灵敏度自定义，导航圆点点击跳转,手势滑动。
 
+ >  <a href='https://jgchenu.github.io/slide.js/' blank>Demo<a>
+    
 ### 使用说明：slide.js文件包含小部分es6语法编写的文件，在移动端有兼容性问题，仅供于源码参考。移动端跟pc端开发引用js文件直接下载slide-es5.js进行引入使用。
 html代码
 
@@ -29,6 +31,6 @@ html代码
    //第二个参数是轮播间隔，非必须参数，默认为3000ms  <br/>
    //第三个参数是轮播速度, 非必须参数，默认为1，数值越大轮播速度越快<br/>
    //第四个参数是手指滑动灵敏度，非必须参数，默认为20，数值越大需要滑动触发的距离就越大<br/>
-   <a href='https://jgchenu.github.io/slide.js/' blank>Demo<a>
+
 
     
