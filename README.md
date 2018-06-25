@@ -29,6 +29,6 @@ html代码
    //第二个参数是轮播间隔，非必须参数，默认为3000ms  <br/>
    //第三个参数是轮播速度, 非必须参数，默认为1，数值越大轮播速度越快<br/>
    //第四个参数是手指滑动灵敏度，非必须参数，默认为20，数值越大需要滑动触发的距离就越大<br/>
-   <a href='http://chenjianguang.com/slide/'>Demo<a>
+   <a href='https://jgchenu.github.io/slide.js/' blank>Demo<a>
 
     
